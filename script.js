@@ -1,0 +1,1 @@
+function searchCards(){let q=document.getElementById('searchInput').value.toLowerCase();document.querySelectorAll('.card').forEach(c=>c.style.display=c.innerText.toLowerCase().includes(q)?'block':'none');}
