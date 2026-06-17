@@ -6,6 +6,30 @@
 
 <title>The Wishlist Theory</title>
 
+.search-box{
+text-align:center;
+margin-top:25px;
+}
+
+.search-box input{
+width:80%;
+max-width:500px;
+padding:12px;
+border-radius:6px;
+border:1px solid #ccc;
+font-size:16px;
+}
+
+.search-box button{
+padding:12px 18px;
+border:none;
+background:#111827;
+color:white;
+border-radius:6px;
+cursor:pointer;
+margin-left:5px;
+}
+
 <style>
 
 *{
@@ -163,7 +187,14 @@ Honest Reviews • Product Comparisons • Buying Guides
 Expert reviews, detailed comparisons and smart buying guides to help you spend wisely.
 </p>
 
-<button>Explore Reviews</button>
+<div class="search-box">
+<input
+type="text"
+id="searchInput"
+placeholder="Search products, reviews, comparisons..."
+>
+<button onclick="searchSite()">Search</button>
+</div>
 
 </section>
 
@@ -207,6 +238,34 @@ Complete comparison to help you choose the better smartwatch.
 <p>Affiliate Disclosure: We may earn a commission from qualifying purchases.</p>
 
 </footer>
+
+<script>
+
+function searchSite() {
+
+let query = document
+.getElementById("searchInput")
+.value
+.toLowerCase();
+
+let cards = document.querySelectorAll(".card");
+
+cards.forEach(card => {
+
+let text = card.innerText.toLowerCase();
+
+if(text.includes(query)){
+card.style.display="block";
+}
+else{
+card.style.display="none";
+}
+
+});
+
+}
+
+</script>
 
 </body>
 </html>
