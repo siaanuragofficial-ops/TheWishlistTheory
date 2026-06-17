@@ -375,3 +375,18 @@ opacity:1;
 transform:translateY(0);
 transition:all .8s ease;
 }
+
+#topBtn{
+position:fixed;
+bottom:20px;
+right:20px;
+width:50px;
+height:50px;
+border:none;
+border-radius:50%;
+background:#2563eb;
+color:white;
+font-size:22px;
+cursor:pointer;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
