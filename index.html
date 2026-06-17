@@ -3,98 +3,209 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Smart Buy Guide</title>
+
+<title>The Wishlist Theory</title>
 
 <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
 body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    background:#f4f4f4;
+background:#f5f7fa;
+color:#333;
 }
 
 header{
-    background:#222;
-    color:white;
-    padding:20px;
-    text-align:center;
+background:#111827;
+color:white;
+padding:20px;
+}
+
+.logo{
+font-size:32px;
+font-weight:bold;
+}
+
+.tagline{
+margin-top:5px;
+color:#cbd5e1;
 }
 
 nav{
-    background:#333;
-    text-align:center;
-    padding:10px;
+margin-top:15px;
 }
 
 nav a{
-    color:white;
-    text-decoration:none;
-    margin:15px;
+color:white;
+text-decoration:none;
+margin-right:20px;
+font-weight:bold;
+}
+
+.hero{
+background:linear-gradient(135deg,#2563eb,#1e40af);
+color:white;
+padding:60px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-size:40px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:18px;
+max-width:700px;
+margin:auto;
+}
+
+.hero button{
+margin-top:20px;
+padding:12px 25px;
+border:none;
+border-radius:5px;
+font-size:16px;
+cursor:pointer;
+background:white;
+color:#2563eb;
+font-weight:bold;
 }
 
 .container{
-    max-width:1000px;
-    margin:auto;
-    padding:20px;
+max-width:1100px;
+margin:auto;
+padding:40px 20px;
+}
+
+.section-title{
+font-size:30px;
+margin-bottom:25px;
+text-align:center;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
 }
 
 .card{
-    background:white;
-    padding:20px;
-    margin-bottom:20px;
-    border-radius:10px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 3px 12px rgba(0,0,0,0.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+.card p{
+margin-bottom:15px;
+}
+
+.btn{
+display:inline-block;
+background:#2563eb;
+color:white;
+padding:10px 18px;
+text-decoration:none;
+border-radius:5px;
 }
 
 footer{
-    background:#222;
-    color:white;
-    text-align:center;
-    padding:15px;
+background:#111827;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:50px;
 }
+
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>Smart Buy Guide</h1>
-<p>Product Reviews, Comparisons & Buying Guides</p>
-</header>
+
+<div class="logo">The Wishlist Theory</div>
+
+<div class="tagline">
+Honest Reviews • Product Comparisons • Buying Guides
+</div>
 
 <nav>
 <a href="#">Home</a>
 <a href="#">Reviews</a>
 <a href="#">Comparisons</a>
+<a href="#">Best Picks</a>
 <a href="#">Contact</a>
 </nav>
 
+</header>
+
+<section class="hero">
+
+<h1>Find The Right Product Before You Buy</h1>
+
+<p>
+Expert reviews, detailed comparisons and smart buying guides to help you spend wisely.
+</p>
+
+<button>Explore Reviews</button>
+
+</section>
+
 <div class="container">
 
+<h2 class="section-title">Latest Guides</h2>
+
+<div class="grid">
+
 <div class="card">
-<h2>Welcome</h2>
+<h3>Best Earbuds Under ₹2000</h3>
 <p>
-Find honest reviews, product comparisons, and buying guides.
+Top budget earbuds with great sound quality and battery life.
 </p>
+<a href="#" class="btn">Read More</a>
 </div>
 
 <div class="card">
-<h2>Best Earbuds Under ₹2000</h2>
+<h3>Best Laptops For Students</h3>
 <p>
-A complete guide to choosing budget earbuds.
+Reliable laptops for study, productivity and online classes.
 </p>
+<a href="#" class="btn">Read More</a>
 </div>
 
 <div class="card">
-<h2>Best Laptops for Students</h2>
+<h3>Boat vs Noise Smartwatch</h3>
 <p>
-Top recommendations for study and productivity.
+Complete comparison to help you choose the better smartwatch.
 </p>
+<a href="#" class="btn">Read More</a>
+</div>
+
 </div>
 
 </div>
 
 <footer>
-© 2026 Smart Buy Guide
+
+<p>© 2026 The Wishlist Theory</p>
+<p>Affiliate Disclosure: We may earn a commission from qualifying purchases.</p>
+
 </footer>
 
 </body>
