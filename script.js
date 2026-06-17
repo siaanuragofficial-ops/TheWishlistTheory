@@ -53,3 +53,12 @@ entry.target.classList.add("show");
 document.querySelectorAll(".card").forEach(card => {
 observer.observe(card);
 });
+
+document.getElementById("topBtn").onclick = () => {
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
+};
